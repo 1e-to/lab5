@@ -15,11 +15,6 @@ int main(int argc, char *argv[])
 	b = atoi(argv[2]);
 	c = atoi(argv[3]);
 
-	if (a == 0) {
-		fprintf(stderr, "First coefficient must be positive!\n");
-		exit(EXIT_FAILURE);
-	}
-
 	double x1, x2;
 	int amount;
 	roots(a, b, c, &amount, &x1, &x2);

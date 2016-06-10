@@ -5,6 +5,11 @@
 
 void roots(int a, int b, int c, int *amount, double *x1, double *x2)
 {
+	if (a == 0) {
+		fprintf(stderr, "First coefficient must be positive!\n");
+		return;
+	}
+
 	double discriminant;
 	discriminant = (b * b) - (4 * a * c);
 
